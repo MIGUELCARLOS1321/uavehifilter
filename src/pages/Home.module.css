@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url('../assets/newbackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containerBox{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 1rem;
+    width: 58em;
+    height: 35em;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.leftContainer{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+    color: #012366;
+    font-weight: bold;
+}
+
+.rightContainer{
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 10rem;
+    height: 10rem;
+}
+
+.cardLeft{
+    width: 35%;
+    height: 100%;
+    padding: 0 10px 0 0 ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardRight{
+    width: 65%;
+    height: 100%;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    overflow: auto;
+}
+
+.inputHolder{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputField{
+    width: 100%;
+    height: 3em;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0 1rem;
+    outline: none;
+}
+
+.searchButton{
+    width: 100%;
+    height: 3em;
+    background-color: #00bf63;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.searchButton:hover{
+    background-color: #009e53;
+}
+
+.searchButton:active{
+    background-color: #008b43;
+    transform: scale(0.98);
+}
+
+.resultBox{
+    width: 100%;
+    height: 5em;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.resultBox:hover{
+    background-color: #cfcfcf;
+    cursor: pointer;
+}   
+
+.previewImage{
+    width: 5em;
+    height: 3em;
+    border: grey 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    object-fit: cover;
+}
+
+.detailHolder{
+    display: flex;
+    flex-direction: column;
+}
